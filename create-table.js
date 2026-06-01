@@ -1,11 +1,11 @@
-import { sql} from "./db. js"; //Importa a conexao com o banco de dados MySQL
+import { sql} from "./db.js"; //Importa a conexao com o banco de dados MySQL
 
 const createTableQuery = `
 CREATE TABLE IF NOT EXISTS cosmeticas (
 id VARCHAR(255) PRIMARY KEY,
-title VARCHAR(255),
+Nome VARCHAR(255),
 description TEXT,
-duration INT
+price INT
 );
 `;// Define a consulta SQL para criar a tabela "cosmeticas" se ela nao existir
 

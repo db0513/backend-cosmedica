@@ -1,0 +1,27 @@
+POST http://localhost:3333/cosmeticos
+Content-Type: application/json
+
+{
+    "nome": "cosmeticos teste",
+    "description": "Este é o primeiro cosmeticos de Node.js com MySQL",
+    "price": 10
+}
+###
+
+GET http://localhost:3333/cosmeticos
+# GET http://localhost:3333/cosmeticos
+
+####
+
+PUT http://localhost:3333/cosmeticos/id-do-cosmeticos-a-ser-atualizado
+Content-Type: application/json
+
+{
+    "nome":"auterei este cosmeticos",
+    "description": "descrição atualizada",
+    "price": 15
+}
+
+####
+
+DELETE http://localhost:3333/cosmeticos/id-do-cosmeticos-a-ser-deletado

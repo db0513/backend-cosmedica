@@ -28,7 +28,7 @@ async list(search) {
 
 
         await sql.execute(
-            'INSERT INTO cosmedica (id, title = Cosmedica, descricao, duracao) VALUES (?, ?, ?, ?)',
+            'INSERT INTO cosmedica (id, title, descricao, price) VALUES (?, ?, ?, ?)',
             [cosmedicaId, nome, description, price]
         );
     }
